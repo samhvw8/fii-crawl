@@ -8,11 +8,23 @@ const fetch = require('node-fetch');
     const email = 'Dkmbongmai2l@gmail.com'
     const pass = 'tuan1234';
 
-    const access_token = await getAccessToken({ email, pass })
+    // const access_token = await getAccessToken({ email, pass })
+    const access_token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IkY4MDA1REIxQkI0MzY4Q0Q3RkJFMUUxRTlEQjkwMTg2MUY5NEFGMTEiLCJ0eXAiOiJKV1QiLCJ4NXQiOiItQUJkc2J0RGFNMV92aDRlbmJrQmhoLVVyeEUifQ.eyJuYmYiOjE2NDA4NjkzMTQsImV4cCI6MTY0MDg5NzkxNCwiaXNzIjoiaHR0cHM6Ly9hdXRoLmZpaW50cmFkZS52biIsImF1ZCI6WyJodHRwczovL2F1dGguZmlpbnRyYWRlLnZuL3Jlc291cmNlcyIsIkZpaW5UcmFkZS5NYXJrZXQiLCJGaWluVHJhZGUuQ29yZSIsIkZpaW5UcmFkZS5SZWFsdGltZSIsIkZpaW5UcmFkZS5GdW5kYW1lbnRhbCJdLCJjbGllbnRfaWQiOiJTdG94UGx1cy5GaWluVHJhZGUuU1BBIiwic3ViIjoiMTgzMjgzIiwiYXV0aF90aW1lIjoxNjQwODY5MzE0LCJpZHAiOiJsb2NhbCIsInVzZXJfaWQiOiIxODMyODMiLCJ1c2VyX25hbWUiOiJmZXdzbWl0aDg3QGdtYWlsLmNvbSIsIm5hbWUiOiIiLCJnaXZlbl9uYW1lIjoiRmV3IiwiZmFtaWx5X25hbWUiOiJTbWl0aCIsIm1pZGRsZV9uYW1lIjoiIiwiZW1haWwiOiJmZXdzbWl0aDg3QGdtYWlsLmNvbSIsInNlcnZpY2VfdHlwZSI6IkZpaW5Hcm91cC5GaWluVHJhZGUiLCJsaXN0X3BhY2thZ2UiOiJGaWluVHJhZGUuVHJpYWwiLCJsaXN0X2ZlYXR1cmUiOiIiLCJsaXN0X2FwaSI6IiIsInJvbGUiOiJDVVNUT01FUiIsImdyb3VwX25hbWUiOiJJbmRpdmlkdWFsIiwic3RhcnRfZGF0ZSI6IjMwLzEyLzIwMjEiLCJlbmRfZGF0ZSI6IjEzLzAxLzIwMjIiLCJoaXRjb3VudF9wZXJtb250aCI6IjAiLCJjb21ncm91cF9saW1pdCI6IiIsInRpY2tlcl9saW1pdCI6IiIsInRpbWVyYW5nZV9saW1pdCI6IjAiLCJkYXRhcmFuZ2VfbGltaXQiOiIwIiwicGVyX21pbnV0ZSI6IjAiLCJwZXJfaG91ciI6IjAiLCJwZXJfZGF5IjoiMCIsInBlcl9tb250aCI6IjAiLCJlbmFibGVkIjoiVHJ1ZSIsImxhc3RfYXR0ZW1wdCI6IjEyLzMwLzIwMjEgNDo1NDoyMSBQTSIsImxhc3RfYXR0ZW1wdF9zdGF0dXMiOiJTVUNDRVNTIiwiZmluZ2VycHJpbnQiOiI0MDExOWI5OWViOTgzNjE4NDMwYmUyNDE2ZTA3YmMxNyIsImNsaWVudHR5cGUiOiJXRUJDTElFTlQiLCJzY29wZSI6WyJvcGVuaWQiLCJGaWluVHJhZGUuTWFya2V0IiwiRmlpblRyYWRlLkNvcmUiLCJGaWluVHJhZGUuUmVhbHRpbWUiLCJGaWluVHJhZGUuRnVuZGFtZW50YWwiXSwiYW1yIjpbInB3ZCJdfQ.ZXijIY6A2N5mFIqaMuhu5XZWb6HIEcjnFaSjapF-og-mFZF6YJbumXGtF8P14ugyMM7vWVStXMA0txxINr98PEpbg8ZD7ge2jGuZ8oYKVc63wts0wgD-e3bacjMLQF1KBy1w8VMGnZg_-W1gyC_LQpI1cUs1lQCpXhOkxaVbOtv7QkWP6Sk9p3QJPK3FFuvyzd32eVmmvEAYyLynvxEyxe_9NtnMGbWisYx53qtl00riR6i4-HggVjmywVsBImltzSDYBBCTwfGEWZj1Cb1zpyQZjJLTQOCrF__OM-WeyIxtdes9SLhOuHAUDbq1j4JbxhuoMqd64qH0GJGKyBv6WA"
 
-    const res = await getTwoDaysSeries({ stock_symbol: "PECO", access_token });
+    // const res = await getBasicApiWithAccessToken({
+    //     link: "https://market.fiintrade.vn/WatchList/GetTwoDaysSeries?language=vi&OrganCode=${stock_symbol}", stock_symbol: "PECO", access_token,
+    // });
 
-    console.log(res)
+    // console.log(res)
+
+    // let data = await getWatchListSummary({ watchListId: "37", access_token })
+
+    // console.log(data.length)
+    // console.log(data[0])
+
+    // let data = await getSignal({ access_token })
+    // let data = await getConsensus({ access_token, code: "FAROS" })
+
 
 
 })();
@@ -54,8 +66,151 @@ async function getAccessToken({ email, pass }) {
     return access_token;
 }
 
-async function getTwoDaysSeries({ stock_symbol, access_token }) {
-    const res = await fetch(`https://market.fiintrade.vn/WatchList/GetTwoDaysSeries?language=vi&OrganCode=${stock_symbol}`, {
+// 1 + 2 + 3 + 4 + ky thuat + bien dong + tong quan + tong quang buoc gia 
+async function getWatchListSummary({ watchListId, access_token }) {
+    // von hoa fundamental rtd11 
+    // doanh thu ttm fundamental isa3
+    // loi nhuan ttm fundamental isa20
+    // loi nhuan ke hoach fundamental isa22
+    // P/E fundamental rtd21
+    // P/E du bao fundamental rtd54
+    // EPS TTM fundamental rtd14
+    // EPS du bao fundamental rtd53 
+    // bvps ttm fundamental rtd7
+
+    // freeloat: extraFields 
+    // freeloatRate: extraFields 
+
+    let data = []
+    let id = 1;
+    let res = await getBasicApiWithAccessToken({
+        link: "https://market.fiintrade.vn/WatchList/GetWatchListSummary?language=vi&id=${id}&WatchListId=${watchListId}&WatchListType=CompanyGroup",
+        access_token,
+        watchListId,
+        id
+    });
+
+    if (res["error"]) {
+        return data;
+    }
+
+    data = [...res.items]
+
+    while (true) {
+        id += 1;
+        res = await getBasicApiWithAccessToken({
+            link: "https://market.fiintrade.vn/WatchList/GetWatchListSummary?language=vi&PackageId=${PackageId}&id=${id}&WatchListId=${watchListId}&WatchListType=CompanyGroup",
+            access_token,
+            id,
+            watchListId,
+            PackageId: res['packageId']
+        });
+
+        if (res["error"]) {
+            return data;
+        }
+
+        data = [...data, ...res.items]
+
+        if (!res['packageId']) {
+            return data;
+        }
+    }
+
+
+}
+
+// code = organCode in summary 
+// get 10 step but return 3 // work in postman and native (7) 
+async function getPriceDepth({ code, access_token }) {
+    let res = await getBasicApiWithAccessToken({
+        link: "https://technical.fiintrade.vn/PriceDepth/GetPriceDepth?language=vi&Code=${code}",
+        access_token,
+        code,
+    });
+
+    if (res["status"] == "Success") {
+        return res.items?.[0]
+    }
+    return {}
+}
+
+// code is organ code (5)
+async function getConsensus({ code, access_token }) {
+    let res = await getBasicApiWithAccessToken({
+        link: "https://fundamental.fiintrade.vn/ConsensusAnalysis/GetConsensus?language=vi&OrganCode=${code}",
+        access_token,
+        code,
+    });
+
+    if (res["status"] == "Success") {
+        return res.items?.[0]
+    }
+    return {}
+}
+
+// code is organ code (5)
+async function getSignal({ access_token, volume, OrderType, TotalVolumeBuSd, orderBy }) {
+    let data = []
+    let page = 1;
+    let pagesize = 50
+    volume = volume || 10000
+    TotalVolumeBuSd = TotalVolumeBuSd || 1
+    OrderType = OrderType || "LessThan"
+    orderBy = orderBy || "TotalMatchVolume"
+    let res = await getBasicApiWithAccessToken({
+        link: "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetAggressive?language=vi&Page=${page}&PageSize=${pagesize}&AverageVolume10D=${volume}&TotalVolumeBuSd=${TotalVolumeBuSd}&OrderType=${OrderType}&order=desc&orderBy=${orderBy}&OrganCode=",
+        access_token,
+        pagesize,
+        volume,
+        TotalVolumeBuSd,
+        OrderType,
+        page,
+        orderBy
+    });
+
+    if (res["status"] != "Success") {
+        return data
+    }
+
+    data = [...res.items]
+
+    if (res["totalCount"] < pagesize) {
+        return data;
+    }
+    while (true) {
+        page += 1;
+        res = await getBasicApiWithAccessToken({
+            link: "https://technical.fiintrade.vn/TechnicalAnalysisSignals/GetAggressive?language=vi&Page=${page}&PageSize=${pagesize}&AverageVolume10D=${volume}&TotalVolumeBuSd=${TotalVolumeBuSd}&OrderType=${OrderType}&order=desc&orderBy=${orderBy}&OrganCode=",
+            access_token,
+            pagesize,
+            volume,
+            TotalVolumeBuSd,
+            OrderType,
+            page,
+            orderBy
+        });
+
+        if (res["status"] != "Success") {
+            break;
+        }
+
+        data = [...data, ...res.items]
+
+        if (res.items.length < pagesize) {
+            break
+        }
+
+    }
+
+    return data;
+}
+
+
+async function getBasicApiWithAccessToken(params) {
+    let { link, access_token } = params;
+    let url = link.replace(/\${([a-zA-Z0-9_-]*)}/gi, (m, g) => params[g])
+    const options = {
         "headers": {
             "accept": "application/json, text/plain, */*",
             "authorization": `Bearer ${access_token}`,
@@ -63,6 +218,8 @@ async function getTwoDaysSeries({ stock_symbol, access_token }) {
         },
         "body": null,
         "method": "GET"
-    }).then(res => res.json());
+    }
+
+    const res = await fetch(url, options).then(res => res.json());
     return res;
 }
