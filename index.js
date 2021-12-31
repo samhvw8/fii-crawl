@@ -136,7 +136,7 @@ async function getWatchListSummary({ watchListId, access_token }) {
 }
 
 // code = organCode in summary 
-// get 10 step but return 3 // work in postman and native (7) 
+// get 10 step but return 3 // work in postman and native (6) 
 async function getPriceDepth({ code, access_token }) {
     let res = await getBasicApiWithAccessToken({
         link: "https://technical.fiintrade.vn/PriceDepth/GetPriceDepth?language=vi&Code=${code}",
