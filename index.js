@@ -18,9 +18,12 @@ const fetch = require('node-fetch');
     // console.log(res)
 
     // let data = await getWatchListSummary({ watchListId: "37", access_token })
+    let data = await getWatchIdList({ access_token })
 
-    // console.log(data.length)
-    // console.log(data[0])
+
+
+    console.log(data.length)
+    console.log(data[0])
 
     // let data = await getSignal({ access_token })
     // let data = await getConsensus({ access_token, code: "FAROS" })
@@ -64,6 +67,18 @@ async function getAccessToken({ email, pass }) {
     const access_token = auth_data['access_token']
 
     return access_token;
+}
+
+async function getWatchIdList({ access_token }) {
+    let res = await getBasicApiWithAccessToken({
+        link: "https://core.fiintrade.vn/UserSetting/GetUserWatchList?language=vi",
+        access_token,
+    });
+
+    if (res["status"] == "Success") {
+        return res.items
+    }
+    return {}
 }
 
 // 1 + 2 + 3 + 4 + ky thuat + bien dong + tong quan + tong quang buoc gia 
